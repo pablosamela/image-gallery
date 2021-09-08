@@ -1,1 +1,34 @@
-/* You can add global styles to this file, and also import other style files */
+*
+  box-sizing: border-box
+
+body
+  min-height: 100vh
+  display: flex
+  align-items: center
+  justify-content: center
+  background-color: black
+h3
+  color: white
+  
+.image-container
+  display: grid
+  grid-template-columns: repeat(5, 1fr)
+  grid-template-rows: repeat(2, 1fr)
+  width: 600px
+  grid-gap: 0.5rem
+  margin: auto
+  .image
+    position: relative
+    padding-bottom: 100%
+    img
+      cursor: pointer
+      height: 100%
+      width: 100%
+      object-fit: cover
+      left: 0
+      position: absolute
+      top: 0
+
+.image-dialog .mat-dialog-container
+  padding: 0
+  overflow: hidden

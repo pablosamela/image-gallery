@@ -1,0 +1,8 @@
+.vscode/
+dist/
+node_modules/
+angular.json
+package-lock.json
+package.json
+*.min.*
+src/assets/

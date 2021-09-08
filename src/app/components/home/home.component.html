@@ -1,0 +1,9 @@
+<h3>Home Gallery</h3>
+
+<div class="image-container" *ngIf="imageList$ | async as images">
+	<div *ngFor="let image of images" class="image">
+		<a (click)="onImageClick(image)">
+			<img src="{{ image.cropped_picture }}" />
+		</a>
+	</div>
+</div>

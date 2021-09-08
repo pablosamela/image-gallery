@@ -1,0 +1,12 @@
+<div class="modal" *ngIf="image$ | async as image">
+	<a (click)="onCloseClick()" class="close">&times;</a>
+	<img src="{{ image.full_picture }}" />
+	<div class="overlay">
+		<span>{{ image.author }}</span>
+		<br />
+		<span>{{ image.camera }}</span>
+		<br />
+		<span>{{ image.tags }}</span>
+		<fa-icon [icon]="icons.faDragon"></fa-icon>
+	</div>
+</div>
